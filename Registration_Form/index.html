@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("https://images.unsplash.com/photo-1528460033278-a6ba57020470?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGNvbG9yJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 10px;
+            padding: 0px;
+        }
+        
+        .main {
+            width: 80%;
+            height: 100%;
+        }
+        
+        .container {
+            float: right;
+            width: 60%;
+            height: 100%;
+            background-color: transparent;
+            box-shadow: 10px 0px 10px 0px rgb(139, 135, 135);
+            margin: 5% 10% 5% 10%;
+            text-align: center;
+        }
+        
+        button {
+            border-radius: 15px;
+            box-shadow: 2px 0px 2px 0px rgb(73, 71, 71);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div>
+                <h1>Registration Form</h1>
+            </div>
+            <div>
+                <form class="form">
+                    <table cellspacing="2" align="center" cellpadding="8" border="0">
+                        <tr>
+                            <td align="right">Name :</td>
+                            <td><input type="text" name="name" placeholder="name" required minlength="3" pattern="[a-zA-Z]" /></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Email ID :</td>
+                            <td><input type="text" required minlength="10" pattern="[.+@+gmail\.com]" /></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Mobile no. :</td>
+                            <td><input type="number" placeholder="+91" required minlength="10" pattern="[0-9]" /></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Password :</td>
+                            <td><input type="password" placeholder="password" required minlength="8" pattern="[a-zA-Z0-9*%]" /></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Confirm Passwor:</td>
+                            <td><input type="password" placeholder="password" required minlength="8" pattern="[a-zA-Z0-9*%]" /></td>
+                        </tr>
+                        <tr>
+                            <td align="right">D.O.B :</td>
+                            <td><input type="date" /></td>
+                        </tr>
+                        <tr>
+                            <td>Gender:</td>
+                            <td><input type="radio" name="gender" />Male
+                                <input type="radio" name="gender" /> Female</td>
+                        </tr>
+                        <tr>
+                            <td><label for=" selector ">Education Details</label></td>
+                            <td><select>
+                                <option>Education</option>
+                                <option value="High School">High School</option>
+                                <option value="Under Graduate">Under Graduate</option>
+                                <option value="Post Graduate">Post Graduate</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Address :</td>
+                            <td><textarea cols="3" rows="5"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="button">Reset</button>
+                                <button class="button" onclick="alert('Thank you!')"><a href="Login.html">submit</a></button>
+                            </td>
+                        </tr>
+
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
