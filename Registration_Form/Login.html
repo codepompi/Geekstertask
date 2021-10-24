@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        div {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        form {
+            /* background-color: lightblue;*/
+            width: 300px;
+            height: 200px;
+            float: left;
+            margin: 10px 600px 200px;
+        }
+        
+        body {
+            background-image: url("https://images.unsplash.com/photo-1528460033278-a6ba57020470?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGNvbG9yJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 10px;
+            padding: 0px;
+        }
+        
+        h2 {
+            text-decoration-line: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <h1>
+            <marquee>Wellcome In The Usersection</marquee>
+        </h1>
+    </div>
+    <div>
+        <h2 style="text-align: center;">
+            <a href="index.html">&#11013 Back to Home</a>
+        </h2>
+        <form>
+            <table>
+                <tr>
+                    <td align="right">Name :</td>
+                    <td><input type="text" name="name" placeholder="name" required minlength="3" pattern="[a-zA-Z]" /></td>
+                </tr>
+                <tr>
+                    <tr>
+                        <td align="right">Password :</td>
+                        <td><input type="password" placeholder="password" required minlength="8" pattern="[a-zA-Z0-9*%]" /></td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="reset" />
+                        <button onclick="alert('Welcome!')">Login</button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <a onclick="alert('Enter main id for reset Password!')">Forgot Password?</a>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>
+                        <td>
+                            <a href="index.html">Create New Account</a>
+                        </td>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
