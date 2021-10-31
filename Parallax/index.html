@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        
+        #Parallax {
+            background-image: url("https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/05/Harry-Potter-Movies-in-Order.jpg?q=50&fit=contain&w=943&h=472&dpr=1.5");
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #audio {
+            background-image: url("https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2021/01/30155602/harry-potter-and-the-sorcerers-stone-700x380.jpg");
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        #audio1 {
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Parallax"> </div>
+    <div>
+        <h1 style="text-align: center;"><a href="https://en.wikipedia.org/wiki/Harry_Potter">Harry Potter</a></h1>
+        <p>Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School
+            of Witchcraft and Wizardry. The main story arc concerns Harry's struggle against Lord Voldemort, a dark wizard who intends to become immortal, overthrow the wizard governing body known as the Ministry of Magic and subjugate all wizards and
+            Muggles (non-magical people).</p>
+    </div>
+    <div id="audio">
+        <div id="audio1">
+            <audio controls>
+            <source src="harry_potter_theme.mp3">
+        </audio>
+        </div>
+    </div>
+</body>
+
+</html>
