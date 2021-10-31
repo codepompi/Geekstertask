@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-image: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 15px;
+        }
+        
+        .Servey {
+            width: 350px;
+            background-color: rgb(219, 174, 174);
+            margin: auto;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius: 15px 15px 15px 15px;
+            font-size: 17px;
+        }
+        
+        #paragraph {
+            color: relative;
+            text-align: center;
+            font-style: italic;
+            font-size: 16px;
+            margin: 5px auto;
+        }
+        
+        .main {
+            background-color: transparent;
+            width: 800px;
+            margin: auto;
+        }
+        
+        form {
+            padding: 15px;
+        }
+        
+        .name {
+            margin-left: 200px;
+            padding-top: 20px;
+            width: 125px;
+            font-size: 18px;
+            font-weight: 700px;
+            font-style: bold;
+        }
+        
+        .firstname {
+            position: relative;
+            left: 300px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 4px;
+            font-size: 15px;
+            height: 35px;
+        }
+        
+        .email {
+            position: relative;
+            left: 300px;
+            top: -33px;
+            line-height: 40px;
+            border-radius: 6px;
+            font-size: 15px;
+            height: 35px;
+        }
+        
+        .mobil {
+            position: relative;
+            left: 300px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 4px;
+            font-size: 15px;
+            height: 35px;
+        }
+        
+        .dob {
+            position: relative;
+            left: 300px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 4px;
+            font-size: 15px;
+            height: 35px;
+        }
+        
+        #select {
+            position: relative;
+            left: 350px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            font-size: 15px;
+            height: 35px;
+        }
+        
+        #service {
+            position: relative;
+            left: 350px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            font-size: 15px;
+            height: 35px;
+        }
+        
+        #Cleanness {
+            position: relative;
+            left: 350px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            font-size: 15px;
+            height: 35px;
+        }
+        
+        #overall {
+            position: relative;
+            left: 350px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            font-size: 15px;
+            height: 35px;
+        }
+        
+        button {
+            border-radius: 6px;
+            transition: margin-right 2s;
+            margin-top: 20px;
+            border: 2px solid white;
+            color: white;
+            background: none;
+            font-size: 25px;
+        }
+        /*0.5s all ease;*/
+        
+        button:hover {
+            background: peachpuff;
+        }
+        
+        #b1 {
+            margin-left: 200px;
+            background-color: rgb(236, 170, 236);
+        }
+        
+        #b2 {
+            margin-left: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Servey">
+        <h1>Please Fill the Servey</h1>
+    </div>
+    <div id="paragraph"> Can We have some time from You for our growth </div>
+    <div class="main">
+        <form>
+            <h2 class="name">Name</h2>
+            <input class="firstname" type="text" name="name" placeholder="name" required minlength="3" pattern="[a-zA-Z]" />
+            <h2 class="name">Email</h2>
+            <input class="email" type="email" pattern="[.+@+gmail\.com]" name="email" required/>
+            <h2 class="name">Mobile</h2>
+            <input class="mobil" type="number" placeholder="+91" name="mobil" required minlength="10" pattern="[0-9]">
+            <h2 class="name">DOB</h2>
+            <input class="dob" type="date" name="dob">
+            <h2>
+                <label class="name" for="selector">Food Catagory</label>
+            </h2>
+            <select id="select">
+            <option value="Excellent">Excellent</option>
+            <option value="Good">Good</option>
+            <option value="Not Satisfied">Not Satisfied</option>
+            </select>
+            <h2>
+                <label class="name" for="selector">Service</label>
+            </h2>
+            <select id="service">
+             <option value="Excellent">Excellent</option>
+             <option value="Good">Good</option>
+             <option value="Not Satisfied">Not Satisfied</option>
+             </select>
+            <h2>
+                <label class="name" for="selector">Cleanness</label>
+            </h2>
+            <select id="Cleanness">
+              <option value="Excellent">Excellent</option>
+              <option value="Good">Good</option>
+              <option value="Not Satisfied">Not Satisfied</option>
+              </select>
+            <h2>
+                <label class="name" for="selector">Overall Value</label>
+            </h2>
+            <select id="overall">
+               <option value="Excellent">Excellent</option>
+               <option value="Good">Good</option>
+               <option value="Can be better">Can be better</option>
+               <option value="Disappointed">Disappointed</option>
+               </select>
+
+        </form>
+        <button id="b1" onclick="alert('Thank You for choosing us!')">Submit</button> <button id="b2"><a href="main.html">More</a></button>
+
+    </div>
+</body>
+
+<div style="text-align: center;">
+    <div style="position:relative; top:0; margin-right:auto;margin-left:auto; z-index:99999">
+
+    </div>
+</div>
+
+</html>
