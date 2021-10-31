@@ -1,0 +1,30 @@
+#div1 {
+    text-align: center;
+}
+
+#div2 {
+    background-color: rgb(233, 122, 122);
+    position: sticky;
+}
+
+#div3 {
+    background-color: rgb(200, 221, 164);
+}
+
+#div4 {
+    background-color: rgb(172, 126, 126);
+    position: sticky;
+}
+
+#div5 {
+    background-color: rgb(193, 193, 206);
+}
+
+#div6 {
+    background-color: rgb(179, 179, 141);
+    position: sticky;
+}
+
+#div7 {
+    background-color: rgb(165, 238, 214);
+}
