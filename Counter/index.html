@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Counter</title>
+    <style>
+        body {
+            display: inline-grid;
+            place-items: center stretch;
+            padding: 0;
+            margin: 0;
+            background-image: url("https://a-teaminsight.com/app/uploads/2019/11/Countdown.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .box {
+            height: 60px;
+            width: 60px;
+        }
+        
+        .counter {
+            height: 600px;
+            width: 500px;
+            margin: 650px 400px;
+            padding: 20px 20px;
+            background-color: transparent;
+            box-sizing: content-box;
+            justify-content: center;
+        }
+        
+        .button {
+            margin-left: 130px;
+            margin-top: 40px;
+            cursor: pointer;
+        }
+        
+        #Forward {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 45px;
+            padding-right: 45px;
+            border: none;
+            border-radius: 20px;
+            background-color: rgb(35, 199, 199);
+            box-shadow: 3px 3px #f8dcdc;
+        }
+        
+        #Backward {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: none;
+            border-radius: 20px;
+            background-color: rgb(35, 199, 199);
+            box-shadow: 3px 3px #f8dcdc;
+        }
+        
+        .main {
+            height: 50px;
+            width: 50px;
+        }
+        
+        #box2 {
+            height: 300px;
+            width: 330px;
+            margin: 50px 100px;
+            padding: 40px 20px 10px 30px;
+            box-sizing: border-box;
+            justify-content: center;
+        }
+        
+        #Counter {
+            padding-left: 70px;
+            font-size: 35px;
+            color: rgb(63, 59, 63);
+            position: absolute;
+        }
+        
+        #value {
+            padding-top: 50px;
+            padding-left: 100px;
+            font-size: 90px;
+            color: rgb(11, 12, 12);
+        }
+        
+        .btn {
+            padding-left: 200px;
+            padding-top: 300px;
+        }
+        
+        #reset {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+            border: none;
+            border-radius: 20px;
+            background-color: rgb(105, 224, 224);
+            box-shadow: 3px 3px #e6a7a7;
+        }
+    </style>
+</head>
+
+<body>
+    <div calss="box">
+        <div class="counter">
+            <div class="button">
+                <button id="Forward" style="padding-right:30px;padding-left:30px;margin-right:40px">Forward</button>
+                <button id="Backward" style="padding-right:30px;padding-left:30px">Backward</button>
+
+            </div>
+            <div class="main">
+                <div id="box2">
+                    <h1 id="Counter" style="font-family: Arial, Helvetica, sans-ser;">Counter </h1>
+                    <h1 id="value">0</h1>
+                </div>
+            </div>
+            <div class="btn">
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let increment = document.querySelector("#Forward");
+        let decrement = document.querySelector("#Backward");
+        let countervalue = document.querySelector("#value");
+        let reset = document.querySelector("#reset");
+
+        let counter = 0;
+        //function for increment
+        increment.addEventListener("click", () => {
+            counter++;
+            countervalue.innerText = counter;
+        });
+        //Function for Decrement
+        decrement.addEventListener("click", () => {
+            counter--;
+            countervalue.innerText = counter;
+        });
+        //Function for Reset
+        reset.addEventListener("click", () => {
+            counter = 0;
+            countervalue.innerText = counter;
+        });
+    </script>
+
+</body>
+
+</html>
