@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>General Questions</title>
+    <style>
+        body {
+            background-color: rgb(244, 250, 250);
+        }
+        
+        #one {
+            box-shadow: 0 0 20px rgb(117, 115, 115);
+            width: 600px;
+            margin: 50px auto;
+            border-radius: 5px;
+            height: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        #two {
+            box-shadow: 0 0 20px rgb(117, 115, 115);
+            width: 600px;
+            margin: 50px auto;
+            border-radius: 5px;
+            height: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        #three {
+            box-shadow: 0 0 20px rgb(117, 115, 115);
+            width: 600px;
+            margin: 50px auto;
+            border-radius: 5px;
+            height: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        #b1 {
+            color: rgb(247, 229, 127);
+            border-color: rgb(228, 211, 113)
+        }
+        
+        #b2 {
+            color: rgb(247, 229, 127);
+            border-color: rgb(228, 211, 113)
+        }
+        
+        #b3 {
+            color: rgb(247, 229, 127);
+            border-color: rgb(228, 211, 113);
+        }
+    </style>
+    <script>
+        function fn1() {
+            var jam = document.getElementById('one');
+            jam.innerText = "Yes , I accepts All Major credit cards";
+        }
+
+        function fn2() {
+            var pom = document.getElementById('two');
+            pom.innerText = "Yes I Support Local Farmer";
+        }
+
+        function fn3() {
+            var tom = document.getElementById('three');
+            tom.innerText = "Yes I use organic ingredients";
+        }
+    </script>
+</head>
+
+<body>
+    <h1 style="font-style: italic; color: gold; text-align: center;">General Questions</h1>
+    <div id="one">
+        Do You Accept All Major Credit Cards ?
+        <button id="b1" onclick="fn1()">+</button>
+    </div>
+    <div id="two">
+        Do You Support Local Framers?
+        <button id="b2" onclick="fn2()">+</button>
+    </div>
+    <div id="three">Do You Use Organic Ingredients ?
+        <button id="b3" onclick="fn3()">+</button>
+    </div>
+</body>
+
+</html>
