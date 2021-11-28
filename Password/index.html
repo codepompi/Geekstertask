@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Password</title>
+    <style>
+        body {
+            background-color: rgb(198, 206, 206);
+        }
+        
+        div {
+            width: 400px;
+            box-shadow: 0 0 20px;
+            padding: 40px;
+            margin: 100px auto;
+            background-color: rgb(164, 165, 164);
+        }
+    </style>
+
+    <script>
+        function func() {
+            var inp = document.getElementById('input')
+            var inpu = input.value
+
+            if (inp.type == 'password') {
+                inp.type = 'Text'
+                btn.innerText = "hide password"
+            } else {
+                inp.type = 'password'
+                btn.innerText = "show password"
+            }
+
+
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="cont">
+        <h1>Password Hide/show</h1>
+        <input type="password" id="input">
+        <button onclick="func()" id="btn">show password</button>
+    </div>
+
+</body>
+
+</html>
