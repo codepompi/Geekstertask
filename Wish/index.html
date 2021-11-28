@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>document</title>
+    <style>
+        body {
+            background-image: url("https://image.freepik.com/free-vector/winter-background-with-pastel-color-brushes-leaves_220290-42.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #main {
+            padding: 20px;
+            margin: 20px auto;
+            text-align: center;
+            color: rgb(58, 61, 61);
+            background-color: transparent;
+        }
+        
+        #b1 {
+            width: 70px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: rgb(211, 206, 206);
+            margin-top: 40px;
+            margin-left: 50px;
+        }
+        
+        #b2 {
+            width: 70px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: rgb(211, 206, 206);
+            margin-top: 40px;
+            margin-left: 70px;
+        }
+        
+        #b3 {
+            width: 70px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: rgb(211, 206, 206);
+            margin-top: 40px;
+            margin-left: 70px;
+        }
+    </style>
+    <script>
+        function GM() {
+            var one = document.getElementById('change');
+            one.innerText = "GOOD MORNING";
+        }
+
+        function GE() {
+            var two = document.getElementById('change');
+            two.innerText = "GOOD EVENING";
+        }
+
+        function GN() {
+            var three = document.getElementById('change');
+            three.innerText = "GOOD NIGHT";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="main">
+        <h2 id="change">Wishing you</h2>
+        <button id="b1" onclick="GM()">GM</button>
+        <button id="b2" onclick="GE()">GE</button>
+        <button id="b3" onclick="GN()"> GN</button>
+
+    </div>
+</body>
+
+</html>
