@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+
+    <style>
+        body {
+            text-align: center;
+            background: linear-gradient(#df9090, #a9aff1);
+            background-attachment: fixed;
+        }
+        
+        #p1 {
+            height: 300px;
+            width: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="d1">
+
+        <button id="b" onclick="fn()">Fetch</button>
+    </div>
+    <div id="d2">
+        <h3>MEME</h3>
+    </div>
+    <div id="d3">
+        <img src="" id="p1" alt="">
+    </div>
+
+    <div id="d4">
+        URL:
+    </div>
+
+    <script>
+        async function fn() {
+            var res = await fetch('https://meme-api.herokuapp.com/gimme');
+            var data = await res.json();
+
+            document.getElementById('p1').src = data.preview[0];
+            document.getElementById('d4').innerText = data.url;
+
+        }
+    </script>
+</body>
+
+</html>
