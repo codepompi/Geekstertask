@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main {
+            height: 300px;
+            width: 300px;
+            box-shadow: 0 0 10px rgb(174, 245, 235);
+            margin: 180px 600px 20px;
+            text-align: center;
+            background: linear-gradient(#ee8484, #aab0f3);
+        }
+        
+        body {
+            background-color: rgb(187, 194, 193);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h1>Multiplication</h1>
+        <input type="number" id="one" placeholder="Enter first number"><br><br>
+
+        <input type="number" id="two" placeholder="Enter second number"><br><br>
+        <input type="number" id="three" placeholder="Enter third number"><br><br>
+        <button id="btn">Multiply</button>
+        <p id="result">Result</p>
+
+    </div>
+    <script>
+        let multiply = function() {
+
+            let input_1 = document.getElementById('one').value;
+            let input_2 = document.getElementById('two').value;
+            let input_3 = document.getElementById('three').value;
+            // alert("clicked");
+            let calc = `The Result is: ${input_1*input_2*input_3}`;
+            let result = document.getElementById('result');
+            result.innerText = calc;
+        }
+
+        let btn = document.getElementById('btn');
+        btn.addEventListener('click', multiply);
+    </script>
+</body>
+
+</html>
