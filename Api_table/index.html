@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+    <style>
+        body {
+            background-color: rgb(236, 212, 252);
+        }
+        
+        #table {
+            font-family: Arial;
+            border-collapse: collapse;
+            margin-left: 18%;
+        }
+        
+        #table th,
+        #table td {
+            border: 2px solid black;
+            padding: 20px;
+            padding-left: 100px;
+            padding-right: 100px;
+            text-align: center;
+            color: black;
+        }
+        
+        #table tr:nth-child(2n) {
+            background-color: rgb(170, 255, 237);
+        }
+        
+        #table tr:hover {
+            background-color: rgb(170, 204, 248);
+        }
+        
+        #table td {
+            text-align: center;
+        }
+        
+        span {
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <span>Api details</span>
+    <table id="table">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Year</th>
+            <th>Color</th>
+        </tr>
+    </table>
+    <script src="index.js"></script>
+</body>
+
+</html>
