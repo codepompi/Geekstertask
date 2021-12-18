@@ -1,0 +1,16 @@
+                    ul button {
+                        margin-left: 15px;
+                    }
+                    
+                    body {
+                        background-color: #c0bdbd;
+                    }
+                    
+                    #task {
+                        height: 600px;
+                        width: 600px;
+                        box-shadow: 0 0 10px black;
+                        margin: auto 30%;
+                        background-color: rgb(236, 206, 214);
+                        text-align: center;
+                    }
