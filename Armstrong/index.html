@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong</title>
+</head>
+
+<body>
+    <h3>Check Whether the number is Armstrong Or Not</h3>
+    <input id="input" placeholder="Enter the 3 digit Number">
+    <button id="button">Check ArmStrong Number</button>
+    <p id="output"></p>
+
+    <script>
+        let btn = document.getElementById('button');
+        btn.addEventListener('click', function() {
+            let inp = document.getElementById('input');
+            let num = inp.value;
+            let sum = 0;
+
+
+            while (num > 0) {
+                let remainder = num % 10;
+                sum += remainder * remainder * remainder;
+                num = parseInt(num / 10);
+            }
+
+            let op = document.getElementById('output');
+
+            if (sum == inp.value) {
+                op.innerText = "The given String is a Armstrong";
+            } else {
+                op.innerText = "The given String is Not a Armstrong";
+            }
+
+        });
+    </script>
+</body>
+
+</html>
