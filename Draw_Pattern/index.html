@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond pattern</title>
+</head>
+
+<body>
+    <h2>Diamond pattern in javascript</h2>
+    <input type="number" id="input">
+    <button id="button">Make a Pattern</button>
+
+    <script>
+        let btn = document.getElementById('button');
+
+        btn.addEventListener('click', function() {
+            let inp = document.getElementById('input');
+            let num = parseInt(inp.value);
+            makePattern(num);
+        });
+
+        function makePattern(num) {
+            let n = num;
+
+            if (num % 2 == 0) {
+                alert('Please Enter Odd Number');
+                return;
+            }
+
+            let string = "";
+            // Upside pyramid
+            for (let i = 1; i <= n; i++) {
+                // printing spaces
+                for (let j = n; j > i; j--) {
+                    string += " ";
+                }
+                // printing star
+                for (let k = 0; k < i * 2 - 1; k++) {
+                    string += "*";
+                }
+                string += "\n";
+            }
+            // downside pyramid
+            for (let i = 1; i <= n - 1; i++) {
+                // printing spaces
+                for (let j = 0; j < i; j++) {
+                    string += " ";
+                }
+                // printing star
+                for (let k = (n - i) * 2 - 1; k > 0; k--) {
+                    string += "*";
+                }
+                string += "\n";
+            }
+            document.write(`<pre>${string}</pre>`);
+            console.log(string);
+
+
+        }
+    </script>
+</body>
+
+</html>
