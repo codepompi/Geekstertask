@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    transition: ease-in-out 0.5s;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img {
+    width: 500px;
+    height: 250px;
+}
+
+img:hover {
+    transform: scale(0.95);
+}
+
+.active-image {
+    position: fixed;
+    top: 20px;
+    left: auto;
+    margin: 10vh auto;
+    width: 80vw;
+    height: 80vh;
+    z-index: 900;
+}
