@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+    <style>
+        body {
+            background-color: #b1afb1;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #000000;
+        }
+        
+        input {
+            text-align: center;
+        }
+        
+        li {
+            text-align: center;
+            list-style: none;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        button {
+            background-color: #5d5d5f;
+            border: 10px;
+            height: 20px;
+            color: black;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Fizz-Buzz</h2>
+        <input type="number" placeholder="Enter Number" id="inp" />
+        <button id="btn">Fizz-Buzz</button>
+        <li>
+            <ul id="ans"></ul>
+        </li>
+    </div>
+    <script>
+        let btn = document.getElementById('btn');
+        let inp = document.getElementById('inp');
+        let x = '';
+        btn.addEventListener('click', function() {
+            let x = inp.value;
+            let N = parseInt(x);
+            let res = document.getElementById('ans');
+            let li = document.createElement('li');
+            res.innerText = '';
+            for (let i = 1; i <= N; i++) {
+                let x = '';
+                let li = document.createElement('li');
+                if (i % 3 === 0 && i % 5 === 0) {
+                    x = "FizzBuzz";
+                    li.innerText = '"' + x + '"';
+                } else if (i % 3 === 0) {
+                    x = 'Fizz';
+                    li.innerText = '"' + x + '"';
+                } else if (i % 5 === 0) {
+                    x = 'Buzz';
+                    li.innerText = '"' + x + '"';
+                } else {
+                    li.innerText = i;
+                }
+                res.appendChild(li);
+
+            }
+
+
+        });
+    </script>
+
+</body>
+
+</html>
