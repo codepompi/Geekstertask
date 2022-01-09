@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Assignment</title>
+</head>
+
+<body>
+    <h1 style="text-align: center">Output is in console </h1>
+    <script>
+        const arr1 = [2, 3, 4, 5, 6, 7, 8];
+        const min = arr => {
+            const helper = (a, ...res) => {
+                if (!res.length) {
+                    return a;
+                };
+                if (a < res[0]) {
+                    res[0] = a;
+                };
+                return helper(...res);
+            };
+            return helper(...arr);
+        }
+        console.log(min(arr1));
+    </script>
+</body>
+
+</html>
