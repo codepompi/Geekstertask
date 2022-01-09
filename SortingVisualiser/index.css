@@ -28,6 +28,7 @@ body {
 
 .bar {
     width: 28px;
+    border-radius: 25px;
     position: absolute;
     left: 0;
     bottom: 0;
