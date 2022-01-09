@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(#ffa3a3, #bbc0fa);
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 1em;
+        }
+        
+        #btn {
+            width: 43%;
+            padding: 4px 0;
+            border-radius: 5px;
+            border: 2px solid rgb(66, 66, 66);
+            background-color: transparent;
+            color: rgb(78, 78, 78);
+            font-weight: bold;
+        }
+        
+        #btn:hover {
+            background-color: rgb(67, 70, 69);
+            color: #ffffff;
+        }
+        
+        #inp {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #000000;
+        }
+        
+        #output {
+            font-size: 20px;
+            color: rgb(24, 26, 24);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Factorial</h2>
+        <p id="output"></p>
+        <input type="number" id="inp">
+        <button id="btn" onclick="factorial()">Find Factorial</button>
+    </div>
+
+    <script>
+        let btn = document.getElementById('btn');
+
+        let output = document.getElementById('output');
+
+        let input = document.querySelector("#inp");
+
+        function factorial() {
+
+            let n = input.value;
+
+            if (n == 0) {
+                output.innerHTML = `<span style=" color:#000000; transition: 2s ease-in-out;">Please enter any number !</spna>`;
+            } else {
+
+                let fact = 1;
+                for (let i = 1; i <= n; i++) {
+
+                    fact *= i;
+
+                }
+                output.innerHTML = `Factorial of ${n} is <span style="color:#000000; font-size:30px;">${fact}</span>`;
+
+            }
+        }
+    </script>
+</body>
+
+</html>
